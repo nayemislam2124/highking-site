@@ -97,6 +97,43 @@ header {
 }
 /* header banner section end */
 
+/* responsive design tablet approach start  */
+@media screen and (min-width: 576px) and (max-width: 992px){
+    header{
+        width:auto;
+        height:auto;
+        padding:.8rem;
+    }
+    .nav-section{
+        flex-direction:column;
+        gap:2rem;
+        margin:0rem auto;
+        text-align:center;
+    }
+    .header-banner-container{
+        flex-direction:column;
+        gap:2rem;
+        margin-top:1rem;
+    }
+}
+/* responsive design tablet approach end */
 /* responsive design mobile approach start  */
-@media screen and
+@media screen and (max-width: 576px){
+    header{
+        width:auto;
+        height:auto;
+        padding:.8rem;
+    }
+    .nav-section{
+        flex-direction:column;
+        gap:2rem;
+        margin:0rem auto;
+        text-align:center;
+    }
+    .header-banner-container{
+        flex-direction:column;
+        gap:2rem;
+        margin-top:1rem;
+    }
+}
 /* responsive design mobile approach end */
