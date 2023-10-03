@@ -200,6 +200,7 @@ header {
     flex-wrap:wrap;
     margin:0rem auto;
     gap:3rem;
+    padding-bottom:2rem;
 }
 .section-3-icons{
     text-transform:uppercase;
@@ -231,6 +232,47 @@ header {
     color:#3E82FC;
 }
 /* section 3 end */
+/* footer start  */
+footer{
+    width:100%;
+    height:100vh;
+    background-color:#ECF3FF;
+}
+.footer-header-container{
+    text-align:center;
+    margin:0rem auto;
+    padding-top:5rem;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+    font-family:poppins;
+}
+.footer-buttons input{
+    padding:0.5rem 3rem;
+    border-color:#3E82FC;
+    color:#3E82FC;
+    font-weight:600;
+    border:1px solid #3E82FC;
+    border-collapse:collapse;
+    border-radius:2rem;
+}
+.footer-buttons button{
+    padding:0.5rem 3rem;
+    border-color:#3E82FC;
+    background-color:#3E82FC;
+    font-weight:600;
+    color:white;
+    border:1px solid #3E82FC;
+    border-collapse:collapse;
+    border-radius:2rem;
+    margin-left:1rem;
+    transition:all 0.4s ease;
+}
+.footer-buttons button:hover{
+    background-color:white;
+    color:#3E82FC;
+}
+/* footer end */
 /* responsive design tablet approach start  */
 @media screen and (min-width: 576px) and (max-width: 992px){
     header{
@@ -273,6 +315,20 @@ header {
     .section-2-text button{
         margin:0rem auto;
     }
+    .section-3-container{
+        display:grid;
+        grid-template-columns:repeat(2, 1fr);
+    }
+    .footer-header-container{
+        flex-direction:column;
+        gap:1rem;
+        padding:1rem;
+        margin:5rem auto;
+        padding-top:5rem;
+    }
+    .footer-buttons button{
+        margin-left:1rem;
+    }
 }
 /* responsive design tablet approach end */
 /* responsive design mobile approach start  */
@@ -311,6 +367,24 @@ header {
     }.section-2-image img{
         width:100%;
         height:auto;
+    }
+    .section-3-container{
+        flex-direction:column;
+        margin:0rem auto;
+    }
+    .footer-header-container{
+        flex-direction:column;
+        gap:1rem;
+        padding:1rem;
+        margin:5rem auto;
+        padding-top:5rem;
+    }
+    .footer-buttons input{
+        margin-left:0rem;
+        margin-bottom:1rem;
+    }
+    .footer-buttons button{
+        margin-left:0rem;
     }
 }
 /* responsive design mobile approach end */
